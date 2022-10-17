@@ -7,28 +7,28 @@
 void main()
 {
 int gd = DETECT,gm;
-int X1 Y1,X2 Y2;
-int dx,dy ,step;
-Float x,y,xincre,yincre
+int a1 b1,a2 b2;
+int da,db ,step;
+Float a,b,aincre,bincre
 init graph (&gd,&gm,"c :\\ turbo c 3 \\ by i"
 printf("enter second end point of a line");
-scanf("%d %d) & X2 & Y2);
+scanf("%d %d) & a2 ,& b2);
 clrscr ();
-dx = X2- X1;
-dy = Y2-Y1;
-if (abs(dx) > abs(dy))
-step = dx;
+da = a2- a1;
+db = b2-b1;
+if (abs(da) > abs(db))
+step = da;
 else
-step= dy;
-xincre = dx |step;
-yincre = dy |step;
-x = X1 ; y = Y1;
+step= db;
+aincre = da |step;
+bincre = db |step;
+a = a1 ; b = a1;
 for (int i =o;i< step;i++)
 {
-putpixel ((int)x, (int)y; RED);
+putpixel ((int)a, (int)b; BLUE);
 delay(100);
-x = x+xincre
-y = y+yincre
+a = a+aincre
+b = b+bincre
 }
 getch()
 close graph ();
